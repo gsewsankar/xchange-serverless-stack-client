@@ -1,7 +1,8 @@
 export default {
+  MAX_ATTACHMENT_SIZE: 5000000,
     s3: {
       REGION: "us-east-2",
-      BUCKET: "wlxchange-user-uploads"
+      BUCKET: "xchange-app-api-dev-serverlessdeploymentbucket-670qczry8w94"
     },
     apiGateway: {
       REGION: "us-east-2",
