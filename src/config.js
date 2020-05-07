@@ -2,7 +2,7 @@ const dev = {
   STRIPE_KEY: "pk_test_wuCspdEm0g5jRark4XCXmdeI00GRCvDXgj",
   s3: {
     REGION: "us-east-2",
-    BUCKET: "xchange-app-2-api-dev-serverlessdeploymentbucket-13il4q0tzevda"
+    BUCKET: "xchange-app-2-api-dev-attachmentsbucket-qvc6w0s9lzb"
   },
   apiGateway: {
     REGION: "us-east-2",
@@ -20,7 +20,7 @@ const prod = {
   STRIPE_KEY: "pk_test_wuCspdEm0g5jRark4XCXmdeI00GRCvDXgj",
   s3: {
     REGION: "us-east-2",
-    BUCKET: "xchange-app-2-api-prod-serverlessdeploymentbucket-1bf9xo26778fs"
+    BUCKET: "xchange-app-2-api-prod-attachmentsbucket-1dydi96wyg2as"
   },
   apiGateway: {
     REGION: "us-east-2",
