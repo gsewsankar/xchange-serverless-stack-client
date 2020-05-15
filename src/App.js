@@ -9,6 +9,8 @@ import { Auth } from "aws-amplify";
 import { onError } from "./libs/errorLib";
 import ErrorBoundary from "./components/ErrorBoundary";
 import config from "./config";
+import logo from "./components/wlx.png"
+
 
 function App() {
 
@@ -63,12 +65,14 @@ function App() {
 
   return (
     !isAuthenticating && (
-      <div className="App container">
+      <div className="App container-fluid">
         <Navbar fluid collapseOnSelect>
           <Navbar.Header>
+          <Link to="/">
             <Navbar.Brand>
-              <Link to="/">WLXchange</Link>
+              <img src={logo} alt="wlxlogo" />
             </Navbar.Brand>
+            </Link>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>

@@ -63,7 +63,7 @@ export default function Home() {
         <h1>WLXchange</h1>
         <p>What stocks are you watching?</p>
         <div>
-          <Link to="/login" className="btn btn-info btn-lg">
+          <Link to="/login" className="btn btn-danger btn-lg">
             Login
           </Link>
           <Link to="/signup" className="btn btn-success btn-lg">
