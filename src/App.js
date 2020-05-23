@@ -10,6 +10,7 @@ import { onError } from "./libs/errorLib";
 import ErrorBoundary from "./components/ErrorBoundary";
 import config from "./config";
 import logo from "./components/wlx.png"
+import { UserAgent } from "@sentry/browser/dist/integrations";
 
 
 function App() {
@@ -81,6 +82,9 @@ function App() {
                 <>
                   <LinkContainer to="/settings">
                     <NavItem>Settings</NavItem>
+                  </LinkContainer>
+                  <LinkContainer to="/username">
+                    <NavItem>My Profile</NavItem>
                   </LinkContainer>
                   <NavItem onClick={handleLogout}>Logout</NavItem>
                 </>
