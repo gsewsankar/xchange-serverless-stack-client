@@ -46,9 +46,9 @@ export default function StockSearchBar() {
           />
         </FormGroup>
         <ListGroup>
-         {input && searchResults.map((element,i) => (
+         {input && searchResults.slice(0, 3).map((element,i) => (
           <LinkContainer key={i} to={`/stocks/${element['1. symbol']}`}>
-          <ListGroupItem><b>{element["1. symbol"]}</b>{" " + element["2. name"]}</ListGroupItem>
+          <ListGroupItem onClick={()=>{input="";}}><b>{element["1. symbol"]}</b>{" " + element["2. name"]}</ListGroupItem>
           </LinkContainer>   
         ))}
       </ListGroup>
